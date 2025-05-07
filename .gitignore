@@ -9,6 +9,8 @@
 *.h5
 *.parquet
 *.feather
+*.npy
+processed_data/
 
 # Environment and Python
 rbat_env/

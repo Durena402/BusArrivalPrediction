@@ -45,3 +45,15 @@ Next-steps: Begin exploratory data analysis focusing on correlations between wea
 2024-06-11 | Enhancement | Implemented 24/7 bus operations and realistic boarding times | Outcome: Partial
 Details: Modifying the synthetic dataset generator to have buses operate 24/7 with reduced passenger counts during night hours. Adding more realistic dwell time calculations where departure times are linearly affected by the number of passengers boarding and alighting at each stop. 
 Next-steps: Complete the implementation; generate new dataset with these enhancements; validate that passenger counts follow expected day/night patterns and that dwell times accurately reflect passenger activity.
+
+2024-06-18 | Modeling | Developed comprehensive model implementation plan | Outcome: Success
+Details: Created detailed breakdown of steps for implementing and comparing four prediction models: LSTM, GRU, Linear Regression, and Random Forest. The plan covers data preparation, feature engineering, model architectures, evaluation metrics, and visualization approaches.
+Next-steps: Update README with comparative analysis focus; start implementing feature engineering pipeline; prepare training/validation/test splits from synthetic dataset for model development.
+
+2024-06-18 | Data-Prep | Implemented data preparation pipeline | Outcome: Success
+Details: Created data_prep.py implementing the feature engineering steps from the model implementation plan. The script processes GPS and stop data, creates temporal/weather/traffic features, handles missing values, prepares sequence data for neural networks, and splits the data into train/validation/test sets.
+Next-steps: Execute the data preparation pipeline on the synthetic dataset; implement baseline models (Linear Regression, Random Forest); begin neural network model development.
+
+2024-06-18 | Data-Prep | Successfully executed data preparation pipeline | Outcome: Success
+Details: Ran data_prep.py on the synthetic dataset. Processed 100,000 GPS records and 31,278 stop records, created 99,500 sequences for neural networks, and split into training (70%), validation (15%), and test (15%) sets. Fixed pandas FutureWarning by updating inplace operations.
+Next-steps: Implement baseline models (Linear Regression, Random Forest); begin neural network (LSTM, GRU) development; analyze feature importance from initial models.
