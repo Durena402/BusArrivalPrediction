@@ -1,0 +1,48 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+#### 1. When to log
+
+* Any new idea, hypothesis, or research question raised
+* Start or completion of an implementation task or experiment
+* Quantitative results (metrics, plots, confusion‑matrices, etc.)
+* Bugs, dead‑ends, or other failures and how they were resolved (or why they were abandoned)
+* Decisions & their rationales (e.g. “switched from XGBoost ➜ LSTM because …”)
+
+#### 2. Entry format (append to **project-timeline.txt**)
+
+```text
+YYYY‑MM‑DD | <Phase> | <Brief summary> | Outcome:<Success|Failure|Partial>
+Details: <1‑3 sentences capturing WHAT/WHY/HOW>
+Next‑steps: <short action plan>
+```
+
+*Phase* suggestions: Ideation, Data‑Prep, Modeling, Training, Evaluation, Fix, Refactor, Deployment, Documentation.
+
+If additional context (tables, longer notes, code snippets) is useful, include it beneath the header line in fenced code blocks.
+
+#### 3. Professor‑facing checklist
+
+Each log entry should map (explicitly or implicitly) to the sections the professor expects in the research paper:
+
+* **Introduction / Motivation** – problem statement, connection to lecture papers
+* **Dataset / Features** – source, modality (images, text, tabular …), preprocessing
+* **Method** – model/analysis type, feature space definition, evaluation plan
+* **Results** – metrics (accuracy, recall, MSE…), visualisations, comparisons
+* **Discussion** – interpretation of results vs. expectations, new questions raised
+
+#### 4. Destination & file‑handling rules
+
+* **Always append** to `project-timeline.txt`; never overwrite previous content.
+* Create the file if it does not yet exist.
+* Store as UTF‑8 plain text in the project root so it can be easily imported into LaTeX/Markdown later.
+
+#### 5. Example entry
+
+```text
+2025‑05‑06 | Modeling | Switched from linear regression to Random‑Forest | Outcome: Success
+Details: CV‑RMSE dropped from 12.4 ➜ 7.8 on syntheticDataset.csv. See notebook run_2025‑05‑06.ipynb for plots.
+Next‑steps: Grid‑search n_estimators & max_depth; evaluate on merged weather+bus data.
+```
