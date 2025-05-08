@@ -7,6 +7,7 @@
 1. Ensure you have Python installed (Python 3.8+ recommended)
 2. Run the setup script to create a Python virtual environment and optionally generate synthetic data:
    ```
+   chmod +x ./setup_env.sh
    ./setup_env.sh
    ```
 3. This script will:
