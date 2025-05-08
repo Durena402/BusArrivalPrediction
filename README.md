@@ -13,14 +13,14 @@
 3. This script will:
    - Create and activate a Python virtual environment
    - Install all required dependencies
-   - Ask if you want to generate synthetic data immediately
-   - Provide instructions for generating data later if needed
+   - Ask if you want to generate synthetic data immediately (Highly Recommended you say "yes")
+   - Offer to automatically start the Jupyter Notebook server with a clickable link (Highly Recommended you say "yes")
 
 ### Important Rules
 
 **ALWAYS run project code with the Python environment activated:**
 ```
-source rbat_env/bin/activate
+source .venv/bin/activate
 ```
 
 ## Project Overview
@@ -71,11 +71,21 @@ The generated dataset includes:
 
 ## Project Implementation
 
-All project code is contained in a single comprehensive Jupyter notebook:
+All project code is contained in a single comprehensive Jupyter notebook. You can start the Jupyter server in two ways:
 
+### Automatic Start (Recommended)
+When running `setup_env.sh`, choose "yes" when asked to start the Jupyter server automatically. This will:
+- Start the server in the background
+- Provide you with a direct link that includes the authentication token
+- Show instructions on how to stop the server when you're done
+
+### Manual Start
+If you prefer to start the server manually:
 ```
-jupyter notebook main.ipynb
+source .venv/bin/activate
+jupyter notebook
 ```
+Then open `main.ipynb` in the browser window that appears.
 
 The notebook contains:
 

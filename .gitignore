@@ -11,9 +11,10 @@
 *.feather
 *.npy
 processed_data/
+model_graphs/
 
 # Environment and Python
-rbat_env/
+.venv/
 __pycache__/
 *.py[cod]
 *$py.class
@@ -53,3 +54,5 @@ Thumbs.db
 *.swp
 *.swo
 .cursor/ 
+
+*.log
