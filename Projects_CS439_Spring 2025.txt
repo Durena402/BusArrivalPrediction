@@ -30,7 +30,7 @@ use, and then train a supervised model on your data. These projects are graded
 on your correct implementation and use of machine learning techniques, as well
 as the performance of the model you trained.
 
-3.​ Other: If there is a specific project you would like to do that doesn’t fall into either
+3.​ Other: If there is a specific project you would like to do that doesn’t fall into either
 of the other categories, ask and we’ll be happy to discuss it with you.
 For all projects, discuss shortcomings of your methods and provide suggestions for
 improving your analysis. Issues pertaining to the reliability and validity of your data, and
@@ -65,7 +65,7 @@ Why is your project important? Why are you excited about it?
 What are some existing questions in the area?
 Are there any prior related works? Provide a brief summary.
 
-Method:
+Method:
 What dataset do you plan to use?
 What form does this data have? Is it images, raw text, tabular, etc? What are the
 features?
